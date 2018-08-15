@@ -1,34 +1,18 @@
-
-// let app = document.querySelector('#app');
-
-/* window.addEventListener('beforeunload', function () {
-    alert(12121)
-    var message = "I'm really going to miss you if you go.";
-    event.returnValue = message;
-    event.preventDefault();
-    return message;
+/* window.addEventListener('popstate',function(event){
+    var state = event.state;
+    if (state){ //第一个页面加载时 state 为空
+     this.console.log(state);
+    }
 }) */
 
-
-
-/* let app = document.querySelector('#app');
-window.addEventListener('DOMContentLoaded',function(){
-    console.log('DOMContentLoaded');
-})
-window.addEventListener('load',function(){
-    console.log('load');
-})
-
-document.addEventListener('readystatechange',function(){
-    console.log('readystatechage');
-}) */
-
-let app = document.querySelector('#app');
-
-window.addEventListener('load',function(){
-    console.log('load');
-})
-
-window.addEventListener('pageshow',function(){
-    console.log('pageshow');
-})
+function testFinally(){
+    try {
+        
+        return 2;
+    } catch (error){
+    return 1;
+    } finally {
+    return 0;
+    }
+    }
+console.log(testFinally())
