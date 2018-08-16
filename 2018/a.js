@@ -1,0 +1,8 @@
+console.log(typeof(null))
+console.log(typeof(undefined))
+console.log(typeof('12'))
+console.log(typeof(false))
+console.log(typeof(Array()))
+console.log(typeof(RegExp))
+console.log(typeof(RegExp))
+console.log(typeof(Symbol()))
