@@ -343,7 +343,45 @@ export default class DataBind extends Comonent{
 }
 
 ```
-> 单向数据流的概念与思想原因
+## React项目遇到的问题
+
+> 初期的this指向的问题，有些地方不能用箭头函数，比如render
+
+> setState的队列问题
+
+## eact的优势以及特点
+ - 运行速度快，不直接操作dom
+ - 跨浏览器兼容 兼容ie8
+ - 单项数据流 ,便于查找问题
+ - 所有都是组件 规范化
+
+## this的理解，如何使用
+ - this表示函数运行时，自动生成的一个内部对象，它指向的是对象本身，通过这个可以调用对象内部的属性和方法，但this的指向会随着函数嵌套的层级而改变，总归来说就是谁调用指向谁，
+
+  - 普通函数 this指向window
+  - 事件函数 this指向事件对象
+  - 构造和函数 this指向实例
+  - 对象 this指向对象
+
+## 浏览器内核
+ - ie trident
+ - 火狐 gecko
+ - 欧朋 presto
+ - 苹果 webkit
+ - 谷歌 blink
+
+## bfc
+
+> bfc是块级作用域上下文，在这个环境下按照一定规则布局是不会影响相邻环境的布局，很好的隔绝了自己对外部环境的干扰，如浮动元素
+
+形成 BFC 的条件
+
+1、浮动元素，float 除 none 以外的值； 
+2、绝对定位元素，position（absolute，fixed）； 
+3、display 为以下其中之一的值 inline-blocks，table-cells，table-captions； 
+4、overflow 除了 visible 以外的值（hidden，auto，scroll）
+
+
 
 
 
